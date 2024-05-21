@@ -1,0 +1,19 @@
+# Docker Compose file for setting up Minio, createbuckets, app_cpu, and app_gpu services
+
+version: '3.7'
+
+services:
+  comfyui:
+    image: phoenixwyf/comfyui:v0.1.0
+    volumes:
+      - ./models:/app/models
+    command: python3 main.py --listen
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            count: all
+            capabilities: [gpu]
+    ports:
+      - "8188:8188"

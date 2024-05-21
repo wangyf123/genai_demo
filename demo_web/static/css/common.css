@@ -1,0 +1,435 @@
+html,
+body,
+#app {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    /* font-family: Roboto; */
+    font-family: Arial;
+}
+.selectNone {
+    user-select: none;
+}
+
+.iconfont {
+    width: 24px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 18px;
+    margin-right: 0px;
+    color: #fff;
+}
+
+/* .el-table tr{
+} */
+
+/* .el-table td, .el-table th {
+    padding: 5px 0;
+} */
+
+.clear0 {
+    clear: both;
+}
+.clear10 {
+    clear: both;
+    height: 10px;
+}
+.clear20 {
+    clear: both;
+    height: 20px;
+}
+
+.dots {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+.comShadow{
+    box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 0 6px rgb(0 0 0 / 4%);
+}
+
+.emptyCommon{
+    width: 80px;
+    padding-top: 20px;
+    margin: auto; 
+    text-align: center; 
+    color: #aaa;
+}
+.emptyCommon2{
+    /* width: 80px; */
+    padding-top: 20px;
+    margin: auto; 
+    text-align: center; 
+    color: #aaa;
+}
+.emptyCommon2 .el-empty__image{
+    display: block;
+    margin: auto;
+}
+
+/*搜索栏样式*/
+.searchRow {
+    box-sizing: border-box;
+    padding-bottom: 0px;
+}
+.searchCol {
+    display: block;
+    height: 40px;
+    padding: 6px 10px;
+    width: 295px;
+    float: left;
+}
+.sc2 {
+    width: 540px;
+}
+.searchBtnWrap {
+    clear: both;
+    height: 40px;
+    text-align: center;
+}
+.labelDiv {
+    width: 80px;
+    text-align: right;
+    font-size: 12px;
+    color: #606266;
+    height: 28px;
+    line-height: 28px;
+    float: left;
+}
+.inputDiv {
+    width: calc(100% - 95px);
+    float: left;
+    margin-left: 15px;
+}
+.inputDiv .el-select {
+    width: 100%;
+}
+
+/* 整体样式风格 */
+.el-menu {
+    background: none;
+    border-right: none;
+}
+.searchDiv {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 8px 0;
+    margin-bottom: 15px;
+}
+.el-table {
+    border-radius: 5px;
+}
+
+
+.el-pagination button,
+.el-pagination span:not([class*="suffix"]) {
+    font-size: 12px;
+}
+.el-pagination {
+    font-weight: normal;
+}
+.el-pager li {
+    font-size: 12px;
+}
+.paginationDiv {
+    padding-top: 10px;
+}
+.dialogFooter {
+    height: auto;
+}
+
+.el-table .cell {
+    white-space: nowrap;
+}
+
+.el-message-box {
+    border-radius: 10px;
+    width: 500px;
+}
+
+.el-upload-list__item .el-icon-upload-success {
+    display: none;
+}
+
+/*dialog*/
+.el-dialog {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.el-dialog__header {
+    /* background-color: #eee;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    border-bottom: 1px solid #DCDFE6; */
+}
+.el-dialog__footer {
+    /* background-color: #eee;
+    padding-bottom: 10px;
+    border-top: 1px solid #DCDFE6; */
+}
+.el-dialog__title {
+    /* display: block;
+    line-height: 24px;
+    height: 24px;
+    font-size: 16px; */
+}
+.el-dialog__headerbtn {
+    top: 16px;
+}
+
+.el-table:not(.el-table–scrollable-x) .el-table__fixed-right{
+    height: 100% !important;
+}
+/* 表格里操作按钮-infoBtn*/
+.infoBtn {
+    background-color: #409eff;
+    border-color: #409eff;
+}
+.infoBtn:focus,
+.infoBtn:hover {
+    background-color: #84bffa;
+    border-color: #84bffa;
+}
+
+/*案件详情样式展示*/
+.comRow .el-col {
+    padding-bottom: 10px;
+}
+.comColTit {
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    font-size: 11px;
+}
+.comColVal {
+    height: 30px;
+    overflow: hidden;
+    font-size: 12px;
+}
+.comColValInt {
+    width: 100%;
+    display: block;
+    /* border: none; */
+    /* border-bottom: 1px solid #ddd; */
+    /* outline: none; */
+    /* padding: 0; */
+    height: 28px;
+}
+.comColValSel {
+    width: 100%;
+    display: block;
+    height: 28px;
+}
+.comColImg {
+    height: 100px;
+}
+.comColImg .el-image {
+    width: 100px;
+    height: 100px;
+}
+
+.statLine {
+    padding-left: 34px;
+    border-radius: 5px;
+    background-color: #fff;
+    line-height: 40px;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+.statSum {
+    display: inline;
+    margin-right: 30px;
+    line-height: 28px;
+}
+
+.editForm .el-input,
+.editForm .el-select,
+.editForm .el-cascader,
+.editForm .el-textarea {
+    width: 380px;
+}
+
+/*详情页*/
+.blockTit {
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+    padding: 11px 20px;
+    line-height: 28px;
+    height: 28px;
+    background-color: #fff;
+}
+.blockContent{
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px 20px;
+    font-size: 12px;
+}
+.labelLef {
+    text-align: right;
+    color: #666;
+    line-height: 18px;
+    float: left;
+    width: 90px;
+    height: 36px;
+}
+.labelRight {
+    color: black;
+    width: calc(100% - 105px);
+    height: 36px;
+    text-align: left;
+    line-height: 18px;
+    float: left;
+    height: 36px;
+}
+.blockTitBtn{
+    display: block;
+    float: right;
+}
+
+.fLeft{
+    float: left;
+}
+.fRight{
+    float: right;
+}
+.colorUnknown{
+    color: #aaa;
+}
+.colorRunning{
+    color: #6EA204;
+}
+.colorWarning{
+    color: #F2AF00;
+}
+.colorError{
+    color: #CE1126;
+}
+.pmItem{
+    margin-bottom: 12px;
+    /* padding-left: 20px; */
+}
+.pmLabel{
+    color: #888;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+}
+.pmValue{
+    font-size: 12px;
+    line-height: 20px;
+    min-height: 20px;
+}
+.pvRow2{
+    height: 72px;
+}
+
+/*块*/
+.wBlock {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+.wbTit {
+    min-height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    font-size: 14px;
+    padding-left: 15px;
+    color: #303133;
+}
+.wbTitRightBtn {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: 20px;
+    top: 11px;
+}
+.wbCon {
+    background-color: #fff;
+    margin-top: 1px;
+    height: 200px;
+    padding: 15px;
+}
+.wbtIcon {
+    padding-right: 10px;
+    font-size: 16px;
+}
+.wbBtn{
+    float: right;
+    margin-right: 15px;
+    margin-top: 11px;
+}
+
+/* mc */
+.tBox {
+    position: relative;
+    /* min-height: 180px; */
+}
+.mbc {
+    position: absolute;
+    z-index: 5;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #fff;
+    /* border: 1px solid #fff; */
+    padding-top: 28px;
+}
+.mbcBlock {
+    position: relative;
+    margin-right: 8px;
+}
+.mbcTit {
+    text-align: center;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    width: 100%;
+    position: absolute;
+    z-index: 6;
+    left: 0;
+    top: 0;
+}
+.mbcTit:hover {
+    background-color: #e6f2fb;
+    color: #2c335a;
+}
+.vTxt {
+    height: 100%;
+    text-align: center;
+    /* color: #2c335a; */
+}
+.mbcSetting{
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    display: none;
+}
+.mbcTit:hover .mbcSetting{
+    display: block;
+}
+
+/* title/value纵向排列的form表单 */
+.colFmTie{
+    height: 26px;
+}
+.colFmTie .requiredDot{
+    padding-left: 5px;
+    color: #f56c6c;
+}
+.colBlockTit{
+    height: 16px;
+    line-height: 18px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-left: 2px solid #077CF5;
+    margin-bottom: 20px;
+    color: #333;
+}
